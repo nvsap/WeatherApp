@@ -1,0 +1,1 @@
+C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\WeatherApp.csproj;x86
