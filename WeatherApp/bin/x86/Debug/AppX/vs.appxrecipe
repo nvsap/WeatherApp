@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>4b3b9c37-d6cb-42ec-bef7-aa7460bf54aa</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>DBD39A489F07016747237F18324F7D89C890166919C703B63A9B53C889292ACA</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>A7041DAD6A1B374E36CBB7A0BA562091F226ED7E7A588A46C5BF275AFF6FC052</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>4b3b9c37-d6cb-42ec-bef7-aa7460bf54aa_1.0.0.0_x86__dnry89da6dxnt</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>4b3b9c37-d6cb-42ec-bef7-aa7460bf54aa_dnry89da6dxnt!App</RegisteredUserModeAppID>
     <RegisteredPackageID>4b3b9c37-d6cb-42ec-bef7-aa7460bf54aa</RegisteredPackageID>
@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-22T13:55:29.540</Modified>
+      <Modified>2016-03-23T15:02:38.780</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\WeatherApp.exe">
       <PackagePath>entrypoint\WeatherApp.exe</PackagePath>
-      <Modified>2016-03-22T13:55:29.191</Modified>
+      <Modified>2016-03-23T15:02:38.443</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -89,6 +89,10 @@
     <AppxPackagedFile Include="C:\Users\Микола\.nuget\packages\Microsoft.Win32.Primitives\4.0.0\lib\dotnet\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
       <Modified>2016-03-21T07:11:26.529</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Микола\.nuget\packages\Newtonsoft.Json\8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2016-03-23T09:54:47.928</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\.nuget\packages\System.AppContext\4.0.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
@@ -442,10 +446,6 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-03-21T07:11:34.389</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\.nuget\packages\WeatherNet.uwp\2.1.2\lib\netcore50\WeatherNetUWP.dll">
-      <PackagePath>WeatherNetUWP.dll</PackagePath>
-      <Modified>2016-03-22T08:51:04.001</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\Assets\weather-background.png">
       <PackagePath>Assets\weather-background.png</PackagePath>
       <Modified>2016-03-22T07:45:49.622</Modified>
@@ -488,14 +488,6 @@
       <PackagePath>Assets\Weather5.jpg</PackagePath>
       <Modified>2016-03-22T07:43:17.989</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\lib\Newtonsoft.Json.dll">
-      <PackagePath>lib\Newtonsoft.Json.dll</PackagePath>
-      <Modified>2016-03-22T11:58:31.390</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\lib\Newtonsoft.Json.xml">
-      <PackagePath>lib\Newtonsoft.Json.xml</PackagePath>
-      <Modified>2016-03-22T11:58:31.392</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-03-21T08:46:08.690</Modified>
@@ -510,11 +502,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-03-22T11:58:42.002</Modified>
+      <Modified>2016-03-23T10:04:55.350</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\Core\WeatherApp.exe">
       <PackagePath>WeatherApp.exe</PackagePath>
-      <Modified>2016-03-22T13:55:29.536</Modified>
+      <Modified>2016-03-23T15:02:38.778</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

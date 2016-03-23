@@ -66,6 +66,9 @@
     <AppxPackagedFile Include="C:\Users\Микола\.nuget\packages\Microsoft.Win32.Primitives\4.0.0\lib\dotnet\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Микола\.nuget\packages\Newtonsoft.Json\8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\.nuget\packages\System.AppContext\4.0.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
     </AppxPackagedFile>
@@ -330,9 +333,6 @@
     <AppxPackagedFile Include="C:\Users\Микола\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\.nuget\packages\WeatherNet.uwp\2.1.2\lib\netcore50\WeatherNetUWP.dll">
-      <PackagePath>WeatherNetUWP.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\Assets\weather-background.png">
       <PackagePath>Assets\weather-background.png</PackagePath>
     </AppxPackagedFile>
@@ -365,12 +365,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\Assets\Weather5.jpg">
       <PackagePath>Assets\Weather5.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\lib\Newtonsoft.Json.dll">
-      <PackagePath>lib\Newtonsoft.Json.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\lib\Newtonsoft.Json.xml">
-      <PackagePath>lib\Newtonsoft.Json.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

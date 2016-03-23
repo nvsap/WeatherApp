@@ -109,8 +109,6 @@
   <ItemGroup>
     <Content Include="Assets\weather-background.png" />
     <Content Include="Assets\Weather5.jpg" />
-    <Content Include="lib\Newtonsoft.Json.dll" />
-    <Content Include="lib\Newtonsoft.Json.xml" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
