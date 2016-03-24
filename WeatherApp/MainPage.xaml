@@ -8,17 +8,55 @@
     mc:Ignorable="d" Background="Black">
 
     <SwapChainPanel Margin="0,0,0,0">
-        <Image x:Name="Assets_weather_background_png" Margin="0,0,0,0" Source="Assets/weather-background.png" Stretch="Fill"/>
-        <StackPanel Height="40" VerticalAlignment="Top" Background="#FF0B456C" Opacity="0.75">
-            <AutoSuggestBox x:Name="SearchBox" Height="41" PlaceholderText="Search"
-                            QueryIcon="Find" HorizontalAlignment="Right" Width="315" BorderThickness="5"
-                            >
-                <MediaElement x:Name="mediaElement" Height="100" Width="100"/>
-            </AutoSuggestBox>
+        <SwapChainPanel.RowDefinitions>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="41*"/>
+        </SwapChainPanel.RowDefinitions>
+        <Image x:Name="Assets_weather_background_png" Margin="0,0,0,0" Source="Assets/weather-background.png" Stretch="Fill" Grid.RowSpan="2"/>
+        <Image x:Name="DayImg1" Margin="400,155,0,0" HorizontalAlignment="Left" Width="80" Source="Assets/LockScreenLogo.png" Grid.Row="1" RenderTransformOrigin="1.867,-0.533" Height="60" VerticalAlignment="Top"/>
+        <TextBlock x:Name="DayHigh1" Margin="480,115,640,413" TextWrapping="Wrap" Text="1" FontSize="64" TextAlignment="Center" FontFamily="Microsoft NeoGothic" Grid.Row="1" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
+        <TextBlock x:Name="TextWeather1" Margin="320,275,0,260" TextWrapping="Wrap" Text="TextWeather" FontSize="24" TextAlignment="Center" HorizontalAlignment="Left" Width="360" Grid.Row="1" RenderTransformOrigin="0.417,-0.375" d:LayoutOverrides="TopPosition, BottomPosition"/>
+        <Image x:Name="DayImg2" HorizontalAlignment="Right" Margin="0,20,280,5" Width="80" Source="Assets/LockScreenLogo.png" d:LayoutOverrides="TopPosition, BottomPosition"/>
+        <Image x:Name="DayImg3" HorizontalAlignment="Right" Height="80" Margin="0,35,280,0" VerticalAlignment="Top" Width="80" Source="Assets/LockScreenLogo.png" Grid.Row="1"/>
+        <Image x:Name="DayImg4" HorizontalAlignment="Right" Height="80" Margin="0,155,280,0" VerticalAlignment="Top" Width="80" Source="Assets/LockScreenLogo.png" Grid.Row="1"/>
+        <Image x:Name="DayImg5" HorizontalAlignment="Right" Margin="0,275,280,260" Width="80" Source="Assets/LockScreenLogo.png" Grid.Row="1" d:LayoutOverrides="TopPosition, BottomPosition"/>
+        <Image x:Name="DayImg6" HorizontalAlignment="Right" Height="80" Margin="0,0,280,140" VerticalAlignment="Bottom" Width="80" Source="Assets/LockScreenLogo.png" Grid.Row="1"/>
+        <Image x:Name="DayImg7" HorizontalAlignment="Right" Height="80" Margin="0,0,280,20" VerticalAlignment="Bottom" Width="80" Source="Assets/LockScreenLogo.png" Grid.Row="1"/>
+        <TextBlock x:Name="TempDay1" HorizontalAlignment="Right" Margin="0,20,215,45" TextWrapping="Wrap" Text="TextWeather" Width="35" d:LayoutOverrides="TopPosition, BottomPosition" Height="35"/>
+        <StackPanel HorizontalAlignment="Left" Width="50" Background="#FF3982CB" Grid.RowSpan="2" d:LayoutOverrides="TopPosition, BottomPosition" Opacity="0.5" Canvas.ZIndex="2">
+            <Button x:Name="LocatioMenuButton" FontFamily="Segoe MDL2 Assets" Content="&#xE81D;" Height="50" Background="Transparent" Click="MenuButton1_Click" Width="50" Margin="0" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+            <Button x:Name="LanguageMenuButton" FontFamily="Segoe MDL2 Assets" Content="&#xE909;" Width="50" Height="50" Background="Transparent" VerticalAlignment="Bottom" Click="OnLangClick"/>
+            <!--<Button x:Name="button" Content="Button" HorizontalAlignment="Stretch" Height="100" VerticalAlignment="Stretch" Margin="0" Click="button_Click_1"/>-->
         </StackPanel>
-        <Image x:Name="img" Height="240" Margin="520,40,520,440" Width="240"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="356" Margin="222,130,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="944"/>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="416,580,0,0" VerticalAlignment="Top" Width="275" Click="button_Click"/>
+        <TextBlock x:Name="NightHigh1" Margin="480,170,0,0" TextWrapping="Wrap" Text="-1" FontSize="64" TextAlignment="Center" FontFamily="Microsoft NeoGothic" Grid.Row="1" Foreground="#FF8B8B8B" Height="100" VerticalAlignment="Top" HorizontalAlignment="Left" Width="160"/>
+        <TextBlock x:Name="CurrDay" HorizontalAlignment="Left" Height="40" Margin="420,75,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" FontSize="29.333" TextAlignment="Center"/>
+        <TextBlock x:Name="TempNight1" HorizontalAlignment="Right" Margin="0,0,215,10" TextWrapping="Wrap" Text="TextWeather" Width="35" Height="35" VerticalAlignment="Bottom" d:LayoutOverrides="Height"/>
+        <TextBlock x:Name="TempDay2" HorizontalAlignment="Right" Margin="0,35,215,0" TextWrapping="Wrap" Text="TextWeather" Width="35" Height="35" Grid.Row="1" VerticalAlignment="Top" d:LayoutOverrides="Height"/>
+        <TextBlock x:Name="TempDay3" HorizontalAlignment="Right" Margin="0,155,215,0" TextWrapping="Wrap" Text="TextWeather" Width="35" Height="35" Grid.Row="1" VerticalAlignment="Top" d:LayoutOverrides="Height"/>
+        <TextBlock x:Name="TempDay4" HorizontalAlignment="Right" Margin="0,275,215,305" TextWrapping="Wrap" Text="TextWeather" Width="35" Height="35" Grid.Row="1"/>
+        <TextBlock x:Name="TempDay6" HorizontalAlignment="Right" Margin="0,0,215,65" TextWrapping="Wrap" Text="TextWeather" Width="35" Height="35" Grid.Row="1" VerticalAlignment="Bottom" d:LayoutOverrides="Height"/>
+        <TextBlock x:Name="TempDay5" HorizontalAlignment="Right" Margin="0,0,215,185" TextWrapping="Wrap" Text="TextWeather" Width="35" Height="35" Grid.Row="1" VerticalAlignment="Bottom" d:LayoutOverrides="Height"/>
+        <TextBlock x:Name="TempNight5" HorizontalAlignment="Right" Margin="0,0,215,140" TextWrapping="Wrap" Text="TextWeather" Width="35" Height="35" Grid.Row="1" VerticalAlignment="Bottom" d:LayoutOverrides="Height"/>
+        <TextBlock x:Name="TempNight6" HorizontalAlignment="Right" Margin="0,0,215,20" TextWrapping="Wrap" Text="TextWeather" Width="35" Height="35" VerticalAlignment="Bottom" d:LayoutOverrides="Height" Grid.Row="1"/>
+        <TextBlock x:Name="TempNight4" HorizontalAlignment="Right" Margin="0,0,215,260" TextWrapping="Wrap" Text="TextWeather" Width="35" Height="35" VerticalAlignment="Bottom" d:LayoutOverrides="Height" Grid.Row="1"/>
+        <TextBlock x:Name="TempNight3" HorizontalAlignment="Right" Margin="0,200,215,0" TextWrapping="Wrap" Text="TextWeather" Width="35" Height="35" VerticalAlignment="Top" d:LayoutOverrides="Height" Grid.Row="1"/>
+        <TextBlock x:Name="TempNight2" HorizontalAlignment="Right" Margin="0,80,215,0" TextWrapping="Wrap" Text="TextWeather" Width="35" Height="35" VerticalAlignment="Top" d:LayoutOverrides="Height" Grid.Row="1"/>
+        <TextBlock x:Name="textDay1" HorizontalAlignment="Right" Height="35" Margin="0,25,100,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100"/>
+        <TextBlock x:Name="TextCond1" HorizontalAlignment="Right" Height="35" Margin="0,0,100,10" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Bottom" Width="100"/>
+        <TextBlock x:Name="textDay6" HorizontalAlignment="Right" Height="35" Margin="0,525,100,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100" Grid.Row="1"/>
+        <TextBlock x:Name="TextCond6" HorizontalAlignment="Right" Height="35" Margin="0,0,100,20" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Bottom" Width="100" Grid.Row="1"/>
+        <TextBlock x:Name="textDay5" HorizontalAlignment="Right" Height="35" Margin="0,405,100,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100" Grid.Row="1"/>
+        <TextBlock x:Name="TextCond5" HorizontalAlignment="Right" Height="35" Margin="0,0,100,140" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Bottom" Width="100" Grid.Row="1"/>
+        <TextBlock x:Name="textDay4" HorizontalAlignment="Right" Height="35" Margin="0,285,100,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100" Grid.Row="1"/>
+        <TextBlock x:Name="TextCond4" HorizontalAlignment="Right" Height="35" Margin="0,0,100,260" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Bottom" Width="100" Grid.Row="1"/>
+        <TextBlock x:Name="textDay3" HorizontalAlignment="Right" Height="35" Margin="0,165,100,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100" Grid.Row="1" d:LayoutOverrides="VerticalAlignment"/>
+        <TextBlock x:Name="TextCond3" HorizontalAlignment="Right" Height="35" Margin="0,200,100,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100" Grid.Row="1"/>
+        <TextBlock x:Name="textDay2" HorizontalAlignment="Right" Height="35" Margin="0,45,100,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100" Grid.Row="1" d:LayoutOverrides="VerticalAlignment"/>
+        <TextBlock x:Name="TextCond2" HorizontalAlignment="Right" Height="35" Margin="0,80,100,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100" Grid.Row="1"/>
+        <TextBlock x:Name="TextLoc" HorizontalAlignment="Left" Height="70" Margin="385,-26,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="255" TextAlignment="Center" FontSize="26.667"/>
+
+
 
     </SwapChainPanel>
+
 </Page>
