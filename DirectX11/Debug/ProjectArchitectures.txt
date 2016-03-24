@@ -1,0 +1,1 @@
+C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\DirectX11\DirectX11.vcxproj;x86

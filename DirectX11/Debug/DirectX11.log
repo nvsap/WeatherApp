@@ -1,0 +1,10 @@
+﻿  compilation object save succeeded; see C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\Debug\DirectX11\SamplePixelShader.cso
+  compilation object save succeeded; see C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\Debug\DirectX11\SampleVertexShader.cso
+  pch.cpp
+  App.cpp
+  DeviceResources.cpp
+  DirectX11Main.cpp
+  SampleFpsTextRenderer.cpp
+  Sample3DSceneRenderer.cpp
+  DirectX11.vcxproj -> C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\Debug\DirectX11\DirectX11.exe
+  DirectX11.vcxproj -> C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\Debug\DirectX11\DirectX11.pdb (Partial PDB)
