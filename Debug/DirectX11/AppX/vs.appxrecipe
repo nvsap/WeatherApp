@@ -22,17 +22,17 @@
     <AppXManifest Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\Debug\DirectX11\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-24T07:43:54.374</Modified>
+      <Modified>2016-03-24T19:47:28.079</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\Debug\DirectX11\DirectX11.exe">
       <PackagePath>DirectX11.exe</PackagePath>
-      <Modified>2016-03-24T07:43:52.407</Modified>
+      <Modified>2016-03-24T19:47:27.404</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\Debug\DirectX11\DirectX11.winmd">
       <PackagePath>DirectX11.winmd</PackagePath>
-      <Modified>2016-03-24T07:43:51.793</Modified>
+      <Modified>2016-03-24T19:47:27.172</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\DirectX11\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -70,15 +70,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\Debug\DirectX11\SamplePixelShader.cso">
       <PackagePath>SamplePixelShader.cso</PackagePath>
-      <Modified>2016-03-24T07:43:36.682</Modified>
+      <Modified>2016-03-24T19:47:07.854</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\Debug\DirectX11\SampleVertexShader.cso">
       <PackagePath>SampleVertexShader.cso</PackagePath>
-      <Modified>2016-03-24T07:43:36.821</Modified>
+      <Modified>2016-03-24T19:47:07.986</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\Debug\DirectX11\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-03-24T07:43:53.810</Modified>
+      <Modified>2016-03-24T19:47:27.864</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -19,22 +19,26 @@ using System.Text;
 using System.Net;
 using System.Net.Http;
 using Windows.UI.Xaml.Media.Imaging;
+using Windows.UI.ViewManagement;
 
 namespace WeatherApp
 {
     public sealed partial class MainPage : Page
     {
         XmlDocument doc = new XmlDocument();
+        string lang = "UA";
 
         public MainPage()
         {
             this.InitializeComponent();
             getWeather();
+            ApplicationView.PreferredLaunchViewSize = new Size(1280, 720);
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
         }
 
         private async void getWeather()
         {
-            string url = "http://api.wunderground.com/api/a6743ab79712c4f3/geolookup/forecast10day/lang:UA/q/autoip.xml";
+            string url = "http://api.wunderground.com/api/a6743ab79712c4f3/geolookup/forecast10day/lang:"+ lang +"/q/autoip.xml";
             var client = new HttpClient();
             HttpResponseMessage msg = await client.GetAsync(new Uri(url));
             var xml = await msg.Content.ReadAsStringAsync();
@@ -92,7 +96,7 @@ namespace WeatherApp
 
         private void OnLangClick(object sender, RoutedEventArgs e)
         {
-            //this.DayImg1.Source = new BitmapImage(new Uri("http://icons.wxug.com/i/c/k/snow.gif", UriKind.Absolute));
+            //sender.GetType().Equals()
         }
 
         private void MenuButton1_Click(object sender, RoutedEventArgs e)

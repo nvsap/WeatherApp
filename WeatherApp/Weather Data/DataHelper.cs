@@ -26,23 +26,30 @@ namespace WeatherApp
             {
                 if ("location".Equals(node.Name))
                 {
-                    string loc = "";
-                    loc = "|" + node.ChildNodes.Item(4).InnerText + "|" + node.ChildNodes.Item(5).InnerText + "|";
+                    string loc = node.ChildNodes.Item(5).InnerText;
+                    if (!"".Equals(node.ChildNodes.Item(3).InnerText))
+                    {
+                        loc += ", " + node.ChildNodes.Item(3).InnerText;
+                    }
+                    else
+                    {
+                        loc += ", " + node.ChildNodes.Item(4).InnerText;
+                    }
                     f7d.Location = loc;
                 }
                 else if ("forecast".Equals(node.Name))
                 {
                     foreach (XmlNode n in node.ChildNodes)
                     {
-                        if ("txt_forecast".Equals(node.Name))
+                        if ("txt_forecast".Equals(n.Name))
                         {
-                            XmlNode forecastday = node.LastChild.FirstChild;
+                            XmlNode forecastday = n.LastChild.FirstChild;
                             f7d.Imperial = forecastday.ChildNodes.Item(4).InnerText;
                             f7d.Metric = forecastday.ChildNodes.Item(5).InnerText;
                         }
-                        else if ("simpleforecast".Equals(node.Name))
+                        else if ("simpleforecast".Equals(n.Name))
                         {
-                            XmlNode forecastday = node.LastChild;
+                            XmlNode forecastday = n.LastChild;
                             f7d.Forecast = Get7DayForecast(forecastday);
                         }
                     }

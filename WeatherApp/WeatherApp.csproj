@@ -109,6 +109,7 @@
     <None Include="WeatherApp_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\background-allweather.png" />
     <Content Include="Assets\weather-background.png" />
     <Content Include="Assets\Weather5.jpg" />
     <Content Include="Properties\Default.rd.xml" />

@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>4b3b9c37-d6cb-42ec-bef7-aa7460bf54aa</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\obj\x86\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>DBD39A489F07016747237F18324F7D89C890166919C703B63A9B53C889292ACA</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>4b3b9c37-d6cb-42ec-bef7-aa7460bf54aa_1.0.0.0_x86__dnry89da6dxnt</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>4b3b9c37-d6cb-42ec-bef7-aa7460bf54aa_dnry89da6dxnt!App</RegisteredUserModeAppID>
@@ -19,16 +19,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-24T19:47:19.854</Modified>
+      <Modified>2016-03-25T14:44:23.832</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\WeatherApp.exe">
+    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\WeatherApp.exe">
       <PackagePath>entrypoint\WeatherApp.exe</PackagePath>
-      <Modified>2016-03-24T19:47:12.733</Modified>
+      <Modified>2016-03-25T14:44:23.512</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -446,67 +446,71 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-03-21T07:11:34.389</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\Assets\weather-background.png">
+    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\Assets\background-allweather.png">
+      <PackagePath>Assets\background-allweather.png</PackagePath>
+      <Modified>2016-03-24T21:42:53.587</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\Assets\weather-background.png">
       <PackagePath>Assets\weather-background.png</PackagePath>
       <Modified>2016-03-22T07:45:49.622</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-10-10T19:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T19:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T19:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T19:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T19:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T19:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T19:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\Assets\Weather5.jpg">
+    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\Assets\Weather5.jpg">
       <PackagePath>Assets\Weather5.jpg</PackagePath>
       <Modified>2016-03-22T07:43:17.989</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-03-21T08:46:08.690</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\WeatherApp.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\WeatherApp.xr.xml">
       <PackagePath>WeatherApp.xr.xml</PackagePath>
-      <Modified>2016-03-24T17:31:59.954</Modified>
+      <Modified>2016-03-25T14:38:51.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-03-19T22:41:51.803</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-03-24T19:47:18.262</Modified>
+      <Modified>2016-03-25T14:40:23.145</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\Core\WeatherApp.exe">
+    <AppxPackagedFile Include="C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\Core\WeatherApp.exe">
       <PackagePath>WeatherApp.exe</PackagePath>
-      <Modified>2016-03-24T19:47:19.850</Modified>
+      <Modified>2016-03-25T14:44:23.830</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

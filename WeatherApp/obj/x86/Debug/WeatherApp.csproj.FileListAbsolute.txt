@@ -111,7 +111,6 @@ C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherAp
 C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\System.Xml.XmlSerializer.dll
-C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\obj\x86\Debug\WeatherApp.csprojResolveAssemblyReference.cache
 C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\obj\x86\Debug\App.g.i.cs
 C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\obj\x86\Debug\App.g.cs
 C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\obj\x86\Debug\MainPage.g.i.cs
@@ -191,3 +190,4 @@ C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherAp
 C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\Микола\documents\visual studio 2015\Projects\WeatherApp\WeatherApp\obj\x86\Debug\WeatherApp.csprojResolveAssemblyReference.cache
