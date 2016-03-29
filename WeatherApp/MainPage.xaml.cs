@@ -26,25 +26,32 @@ namespace WeatherApp
     public sealed partial class MainPage : Page
     {
         XmlDocument doc = new XmlDocument();
-        string lang = "UA";
+        private enum Lang { EN, UA, RU };
+        private string locCity = "autoip";
+        private string locCountry = "";
+        private Lang lang;
 
         public MainPage()
         {
+            lang = Lang.EN;
+            
             this.InitializeComponent();
             getWeather();
             ApplicationView.PreferredLaunchViewSize = new Size(1280, 720);
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
         }
+        
+
 
         private async void getWeather()
         {
-            string url = "http://api.wunderground.com/api/a6743ab79712c4f3/geolookup/forecast10day/lang:"+ lang +"/q/autoip.xml";
+            string url = "http://api.wunderground.com/api/a6743ab79712c4f3/geolookup/forecast10day/lang:"+ lang.ToString() +"/q/" + locCountry.ToString() + locCity.ToString() + ".xml";
             var client = new HttpClient();
             HttpResponseMessage msg = await client.GetAsync(new Uri(url));
-            var xml = await msg.Content.ReadAsStringAsync();
+            var xml = await msg.Content.ReadAsStringAsync();    
             doc.LoadXml(xml);
             WeatherDataStructures.Forecast7Days weather = DataHelper.ProcessXML(doc);
-            FillLables(weather);
+            FillLables(weather); 
         }
         
         private void FillLables(WeatherDataStructures.Forecast7Days weather)
@@ -96,17 +103,65 @@ namespace WeatherApp
 
         private void OnLangClick(object sender, RoutedEventArgs e)
         {
-            //sender.GetType().Equals()
+            Lang prevLang = lang;
+            if (sender is MenuFlyoutItem)
+            {
+                switch ((sender as MenuFlyoutItem).Name)
+                {
+                    case "UKR":
+                    {
+                        lang = Lang.UA;
+                        break;
+                    }
+                    case "RUS":
+                    {
+                        lang = Lang.RU;
+                        break;
+                    }
+                    default:
+                    {
+                        lang = Lang.EN;
+                        break;
+                    }
+                }
+            }
+
+            if (lang != prevLang)
+            {
+                getWeather();
+            }
+         }
+        private void OnClickLocation(object sender, RoutedEventArgs e)
+        {
+            string prevLocCity = locCity;
+            string prevLocCountry = locCountry;
+            locCity = CityS.Text;
+            locCountry = CountryS.Text;
+            if(String.IsNullOrEmpty(locCountry))
+            {
+                getWeather();
+            }
+            else
+            {
+                locCountry = locCountry + "/";
+            }
+            getWeather();
+            //CountryS.Tex();
         }
 
         private void MenuButton1_Click(object sender, RoutedEventArgs e)
         {
-            //this.DayImg1.Source = new BitmapImage(new Uri("http://icons.wxug.com/i/c/k/partlycloudy.gif", UriKind.Absolute));
+            
         }
 
         private void button_Click_1(object sender, RoutedEventArgs e)
         {
             getWeather();
+        }
+
+        private void TextLoc_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 
