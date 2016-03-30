@@ -27,7 +27,10 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Background" />
       <RootProperty Name="Opacity" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootMethod Name="GetZIndex" />
@@ -44,19 +47,31 @@
       <RootMethod Name="SetRow" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Text" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Foreground" />
-      <RootProperty Name="Height" />
       <RootProperty Name="FontWeight" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="QueryIcon" />
+      <RootEvent Name="TextChanged" />
+      <RootEvent Name="QuerySubmitted" />
+      <RootEvent Name="SuggestionChosen" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="FontFamily" />

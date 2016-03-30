@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-29T20:14:32.880</Modified>
+      <Modified>2016-03-30T10:52:59.000</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\WeatherApp.exe">
       <PackagePath>entrypoint\WeatherApp.exe</PackagePath>
-      <Modified>2016-03-29T20:14:32.472</Modified>
+      <Modified>2016-03-30T10:52:58.109</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -498,7 +498,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\WeatherApp.xr.xml">
       <PackagePath>WeatherApp.xr.xml</PackagePath>
-      <Modified>2016-03-29T14:41:19.346</Modified>
+      <Modified>2016-03-30T08:33:13.139</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -506,11 +506,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-03-29T20:07:20.017</Modified>
+      <Modified>2016-03-30T10:52:58.774</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Микола\Documents\Visual Studio 2015\Projects\WeatherApp\WeatherApp\bin\x86\Debug\Core\WeatherApp.exe">
       <PackagePath>WeatherApp.exe</PackagePath>
-      <Modified>2016-03-29T20:14:32.836</Modified>
+      <Modified>2016-03-30T10:52:58.995</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -12,16 +12,16 @@
             <RowDefinition/>
         </SwapChainPanel.RowDefinitions>
         <Image x:ConnectionId='2' x:Name="Assets_weather_background_png" Margin="0,0,0,0" Source="Assets/background-allweather.png" Stretch="Fill"/>
-        <StackPanel HorizontalAlignment="Left" Width="50" Background="#FF0C5197" d:LayoutOverrides="TopPosition, BottomPosition" Opacity="0.5" Canvas.ZIndex="2">
-            <Button x:ConnectionId='39' x:Name="LocatioMenuButton" FontFamily="Segoe MDL2 Assets" Content="&#xE81D;" Height="50" Background="Transparent"                           Width="50" Margin="0" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+        <StackPanel HorizontalAlignment="Left" Width="50" Background="#FF0C5197" Opacity="0.5" Canvas.ZIndex="2" Margin="0,30,0,0" d:LayoutOverrides="TopPosition, BottomPosition">
+            <Button x:ConnectionId='41' x:Name="LocatioMenuButton" FontFamily="Segoe MDL2 Assets" Content="&#xE81D;" Height="50" Background="Transparent"                        Width="50" Margin="0" VerticalAlignment="Bottom" HorizontalAlignment="Left">
                 <Button.Resources>
                     <Flyout x:Key="LocationChose">
                         <Grid Height="146" Width="200">
-                            <TextBox x:ConnectionId='45' x:Name="CountryS" Height="25" Margin="87,10,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition"/>
-                            <TextBox x:ConnectionId='46' x:Name="CityS" Margin="87,47,10,0" TextWrapping="Wrap" Text="" Height="20" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition"/>
-                            <TextBlock x:ConnectionId='47' x:Name="Country" HorizontalAlignment="Left" Height="32" Margin="0,10,0,0" TextWrapping="Wrap" Text="Country:" VerticalAlignment="Top" Width="82"/>
-                            <TextBlock x:ConnectionId='48' x:Name="City" HorizontalAlignment="Left" Margin="0,47,0,51" TextWrapping="Wrap" Text="City:" Width="82" d:LayoutOverrides="TopPosition, BottomPosition"/>
-                            <Button x:ConnectionId='49' x:Name="button" Content="Search" HorizontalAlignment="Stretch" Height="31" Margin="87,0,10,17" VerticalAlignment="Bottom"                        />
+                            <TextBox x:ConnectionId='48' x:Name="CountryS" Height="25" Margin="87,10,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition"/>
+                            <TextBox x:ConnectionId='49' x:Name="CityS" Margin="87,47,10,0" TextWrapping="Wrap" Text="" Height="20" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition"/>
+                            <TextBlock x:ConnectionId='50' x:Name="Country" HorizontalAlignment="Left" Height="32" Margin="0,10,0,0" TextWrapping="Wrap" Text="Country:" VerticalAlignment="Top" Width="82"/>
+                            <TextBlock x:ConnectionId='51' x:Name="City" HorizontalAlignment="Left" Margin="0,47,0,51" TextWrapping="Wrap" Text="City:" Width="82" d:LayoutOverrides="TopPosition, BottomPosition"/>
+                            <Button x:ConnectionId='52' x:Name="button" Content="Search" HorizontalAlignment="Stretch" Height="31" Margin="87,0,10,17" VerticalAlignment="Bottom"                        />
                         </Grid>
                     </Flyout>
                 </Button.Resources>
@@ -30,9 +30,9 @@
                 </Button.Flyout>
 
             </Button>
-            <Button x:ConnectionId='40' x:Name="LanguageMenuButton" FontFamily="Segoe MDL2 Assets" Content="&#xE909;" Width="50" Height="50" Background="#FF2668A1" VerticalAlignment="Bottom">
+            <Button x:ConnectionId='42' x:Name="LanguageMenuButton" FontFamily="Segoe MDL2 Assets" Content="&#xE909;" Width="50" Height="50" Background="#FF2668A1" VerticalAlignment="Bottom">
                 <Button.Flyout>
-                    <MenuFlyout x:ConnectionId='41' x:Name="LangMenu" Placement="Bottom" >
+                    <MenuFlyout x:ConnectionId='44' x:Name="LangMenu" Placement="Bottom" >
                         <MenuFlyout.MenuFlyoutPresenterStyle>
                             <Style TargetType="MenuFlyoutPresenter">
                                 <Setter Property="Background" Value="#FF3F7DAB"/>
@@ -41,15 +41,16 @@
                                 <Setter Property="MaxWidth" Value="50"/>
                             </Style>
                         </MenuFlyout.MenuFlyoutPresenterStyle>
-                        <MenuFlyoutItem x:ConnectionId='42' Text="ENG" Background="#FF3F7DAB"                     x:Name="ENG"/>
-                        <MenuFlyoutItem x:ConnectionId='43' Text="УКР" Background="#FF3F7DAB"                     x:Name="UKR"/>
-                        <MenuFlyoutItem x:ConnectionId='44' Text="РУС" Background="#FF3F7DAB"                     x:Name="RUS"/>
+                        <MenuFlyoutItem x:ConnectionId='45' Text="ENG" Background="#FF3F7DAB"                     x:Name="ENG"/>
+                        <MenuFlyoutItem x:ConnectionId='46' Text="УКР" Background="#FF3F7DAB"                     x:Name="UKR"/>
+                        <MenuFlyoutItem x:ConnectionId='47' Text="РУС" Background="#FF3F7DAB"                     x:Name="RUS"/>
                     </MenuFlyout>
                 </Button.Flyout>
             </Button>
+            <Button x:ConnectionId='43' x:Name="Button" FontFamily="Segoe MDL2 Assets" Content="&#59180;" Width="50" Height="50" Background="#FF2668A1" VerticalAlignment="Bottom"                       />
             <!--<Button x:Name="button" Content="Button" HorizontalAlignment="Stretch" Height="100" VerticalAlignment="Stretch" Margin="0" Click="button_Click_1"/>-->
         </StackPanel>
-        <Grid HorizontalAlignment="Right" Margin="0,20,25,20" Width="335">
+        <Grid HorizontalAlignment="Right" Margin="0,35,25,20" Width="335" d:LayoutOverrides="TopPosition, BottomPosition">
             <Grid.RowDefinitions>
                 <RowDefinition Height="5*"/>
                 <RowDefinition Height="6*"/>
@@ -58,36 +59,36 @@
                 <RowDefinition Height="6*"/>
                 <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
-            <Image x:ConnectionId='9' x:Name="DayImg2" Margin="0,0,255,20" d:LayoutOverrides="VerticalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition"/>
-            <Image x:ConnectionId='10' x:Name="DayImg3" Margin="0,20,255,20" d:LayoutOverrides="VerticalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition" Grid.Row="1"/>
-            <Image x:ConnectionId='11' x:Name="DayImg4" Margin="0,20,255,20" d:LayoutOverrides="VerticalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition" Grid.Row="2"/>
-            <Image x:ConnectionId='12' x:Name="DayImg5" Margin="0,20,255,20" d:LayoutOverrides="VerticalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition" Grid.Row="3"/>
-            <Image x:ConnectionId='13' x:Name="DayImg6" Margin="0,20,255,20" d:LayoutOverrides="VerticalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition" Grid.Row="4"/>
-            <Image x:ConnectionId='14' x:Name="DayImg7" Margin="0,20,255,0" d:LayoutOverrides="VerticalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition" Grid.Row="5"/>
-            <TextBlock x:ConnectionId='15' x:Name="TempDay1" Margin="110,0,190,70" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition"/>
-            <TextBlock x:ConnectionId='16' x:Name="TempNight1" Margin="110,50,190,20" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Foreground="#FF464444"/>
-            <TextBlock x:ConnectionId='17' x:Name="TempDay2" Margin="110,20,190,70" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="1"/>
-            <TextBlock x:ConnectionId='18' x:Name="TempDay3" Margin="110,20,190,70" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" RenderTransformOrigin="0.429,0.571" Grid.Row="2"/>
-            <TextBlock x:ConnectionId='19' x:Name="TempDay4" Margin="110,20,190,70" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="3"/>
-            <TextBlock x:ConnectionId='20' x:Name="TempDay6" Margin="110,20,190,50" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="5"/>
-            <TextBlock x:ConnectionId='21' x:Name="TempDay5" Margin="110,20,190,70" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="4"/>
-            <TextBlock x:ConnectionId='22' x:Name="TempNight5" Margin="110,70,190,20" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="4" Foreground="#FF464444"/>
-            <TextBlock x:ConnectionId='23' x:Name="TempNight6" Margin="110,70,190,0" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="5" Foreground="#FF464444"/>
-            <TextBlock x:ConnectionId='24' x:Name="TempNight4" Margin="110,70,190,20" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="3" Foreground="#FF464444"/>
-            <TextBlock x:ConnectionId='25' x:Name="TempNight3" Margin="110,70,190,20" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="2" Text=""/>
-            <TextBlock x:ConnectionId='26' x:Name="TempNight2" Margin="110,70,190,20" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="1" Foreground="#FF464444"/>
-            <TextBlock x:ConnectionId='27' x:Name="textDay1" Margin="160,0,0,70" TextWrapping="Wrap" d:LayoutOverrides="LeftPosition, RightPosition" TextAlignment="DetectFromContent" Height="30" FontWeight="Bold"/>
-            <TextBlock x:ConnectionId='28' x:Name="TextCond1" Margin="160,50,0,20" TextWrapping="Wrap" d:LayoutOverrides="LeftPosition, RightPosition" Height="30"/>
-            <TextBlock x:ConnectionId='29' x:Name="textDay6" Margin="160,20,0,50" TextWrapping="Wrap" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="5" Height="30" FontWeight="Bold"/>
-            <TextBlock x:ConnectionId='30' x:Name="TextCond6" Margin="160,70,0,0" TextWrapping="Wrap" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="5" Height="30"/>
-            <TextBlock x:ConnectionId='31' x:Name="textDay5" Margin="160,20,0,70" TextWrapping="Wrap" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="4" Height="30" FontWeight="Bold"/>
-            <TextBlock x:ConnectionId='32' x:Name="TextCond5" Margin="160,70,0,20" TextWrapping="Wrap" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="4" Height="30"/>
-            <TextBlock x:ConnectionId='33' x:Name="textDay4" Margin="160,20,0,70" TextWrapping="Wrap" d:LayoutOverrides="HorizontalAlignment, LeftPosition, RightPosition" Grid.Row="3" Height="30" FontWeight="Bold"/>
-            <TextBlock x:ConnectionId='34' x:Name="TextCond4" Margin="160,70,0,20" TextWrapping="Wrap" d:LayoutOverrides="HorizontalAlignment, LeftPosition, RightPosition" Grid.Row="3" Height="30"/>
-            <TextBlock x:ConnectionId='35' x:Name="textDay3" Margin="160,20,0,70" TextWrapping="Wrap" Text="" d:LayoutOverrides="HorizontalAlignment, LeftPosition, RightPosition" Grid.Row="2" Height="30" FontWeight="Bold"/>
-            <TextBlock x:ConnectionId='36' x:Name="TextCond3" Margin="160,70,0,20" TextWrapping="Wrap" Text="" d:LayoutOverrides="HorizontalAlignment, LeftPosition, RightPosition" Grid.Row="2" Height="30"/>
-            <TextBlock x:ConnectionId='37' x:Name="textDay2" Margin="160,20,0,70" TextWrapping="Wrap" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="1" Height="30" FontWeight="Bold"/>
-            <TextBlock x:ConnectionId='38' x:Name="TextCond2" Margin="160,70,0,20" TextWrapping="Wrap" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="1" Height="30"/>
+            <Image x:ConnectionId='11' x:Name="DayImg2" Margin="0,0,255,20" d:LayoutOverrides="VerticalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition"/>
+            <Image x:ConnectionId='12' x:Name="DayImg3" Margin="0,20,255,20" d:LayoutOverrides="VerticalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition" Grid.Row="1"/>
+            <Image x:ConnectionId='13' x:Name="DayImg4" Margin="0,20,255,20" d:LayoutOverrides="VerticalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition" Grid.Row="2"/>
+            <Image x:ConnectionId='14' x:Name="DayImg5" Margin="0,20,255,20" d:LayoutOverrides="VerticalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition" Grid.Row="3"/>
+            <Image x:ConnectionId='15' x:Name="DayImg6" Margin="0,20,255,20" d:LayoutOverrides="VerticalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition" Grid.Row="4"/>
+            <Image x:ConnectionId='16' x:Name="DayImg7" Margin="0,20,255,0" d:LayoutOverrides="VerticalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition" Grid.Row="5"/>
+            <TextBlock x:ConnectionId='17' x:Name="TempDay1" Margin="110,0,190,70" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition"/>
+            <TextBlock x:ConnectionId='18' x:Name="TempNight1" Margin="110,50,190,20" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Foreground="#FF464444"/>
+            <TextBlock x:ConnectionId='19' x:Name="TempDay2" Margin="110,20,190,70" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="1"/>
+            <TextBlock x:ConnectionId='20' x:Name="TempDay3" Margin="110,20,190,70" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" RenderTransformOrigin="0.429,0.571" Grid.Row="2"/>
+            <TextBlock x:ConnectionId='21' x:Name="TempDay4" Margin="110,20,190,70" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="3"/>
+            <TextBlock x:ConnectionId='22' x:Name="TempDay6" Margin="110,20,190,50" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="5"/>
+            <TextBlock x:ConnectionId='23' x:Name="TempDay5" Margin="110,20,190,70" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="4"/>
+            <TextBlock x:ConnectionId='24' x:Name="TempNight5" Margin="110,70,190,20" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="4" Foreground="#FF464444"/>
+            <TextBlock x:ConnectionId='25' x:Name="TempNight6" Margin="110,70,190,0" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="5" Foreground="#FF464444"/>
+            <TextBlock x:ConnectionId='26' x:Name="TempNight4" Margin="110,70,190,20" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="3" Foreground="#FF464444"/>
+            <TextBlock x:ConnectionId='27' x:Name="TempNight3" Margin="110,70,190,20" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="2" Text=""/>
+            <TextBlock x:ConnectionId='28' x:Name="TempNight2" Margin="110,70,190,20" TextWrapping="Wrap" Height="30" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="1" Foreground="#FF464444"/>
+            <TextBlock x:ConnectionId='29' x:Name="textDay1" Margin="160,0,0,70" TextWrapping="Wrap" d:LayoutOverrides="LeftPosition, RightPosition" TextAlignment="DetectFromContent" Height="30" FontWeight="Bold"/>
+            <TextBlock x:ConnectionId='30' x:Name="TextCond1" Margin="160,50,0,20" TextWrapping="Wrap" d:LayoutOverrides="LeftPosition, RightPosition" Height="30"/>
+            <TextBlock x:ConnectionId='31' x:Name="textDay6" Margin="160,20,0,50" TextWrapping="Wrap" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="5" Height="30" FontWeight="Bold"/>
+            <TextBlock x:ConnectionId='32' x:Name="TextCond6" Margin="160,70,0,0" TextWrapping="Wrap" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="5" Height="30"/>
+            <TextBlock x:ConnectionId='33' x:Name="textDay5" Margin="160,20,0,70" TextWrapping="Wrap" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="4" Height="30" FontWeight="Bold"/>
+            <TextBlock x:ConnectionId='34' x:Name="TextCond5" Margin="160,70,0,20" TextWrapping="Wrap" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="4" Height="30"/>
+            <TextBlock x:ConnectionId='35' x:Name="textDay4" Margin="160,20,0,70" TextWrapping="Wrap" d:LayoutOverrides="HorizontalAlignment, LeftPosition, RightPosition" Grid.Row="3" Height="30" FontWeight="Bold"/>
+            <TextBlock x:ConnectionId='36' x:Name="TextCond4" Margin="160,70,0,20" TextWrapping="Wrap" d:LayoutOverrides="HorizontalAlignment, LeftPosition, RightPosition" Grid.Row="3" Height="30"/>
+            <TextBlock x:ConnectionId='37' x:Name="textDay3" Margin="160,20,0,70" TextWrapping="Wrap" Text="" d:LayoutOverrides="HorizontalAlignment, LeftPosition, RightPosition" Grid.Row="2" Height="30" FontWeight="Bold"/>
+            <TextBlock x:ConnectionId='38' x:Name="TextCond3" Margin="160,70,0,20" TextWrapping="Wrap" Text="" d:LayoutOverrides="HorizontalAlignment, LeftPosition, RightPosition" Grid.Row="2" Height="30"/>
+            <TextBlock x:ConnectionId='39' x:Name="textDay2" Margin="160,20,0,70" TextWrapping="Wrap" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="1" Height="30" FontWeight="Bold"/>
+            <TextBlock x:ConnectionId='40' x:Name="TextCond2" Margin="160,70,0,20" TextWrapping="Wrap" d:LayoutOverrides="LeftPosition, RightPosition" Grid.Row="1" Height="30"/>
         </Grid>
         <Grid Margin="320,79,600,180">
             <Grid.RowDefinitions>
@@ -96,16 +97,20 @@
                 <RowDefinition Height="180*"/>
                 <RowDefinition Height="145*"/>
             </Grid.RowDefinitions>
-            <Image x:ConnectionId='3' x:Name="DayImg1" Margin="60,55,220,54" RenderTransformOrigin="1.867,-0.533" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Grid.Row="2"/>
-            <TextBlock x:ConnectionId='4' x:Name="DayHigh1" Margin="175,5,25,95" TextWrapping="Wrap" Text="" FontSize="64" TextAlignment="Center" FontFamily="Microsoft NeoGothic" d:LayoutOverrides="HorizontalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition" Grid.Row="2"/>
-            <TextBlock x:ConnectionId='5' x:Name="TextWeather1" TextWrapping="Wrap" Text="" FontSize="24" TextAlignment="Center" RenderTransformOrigin="0.417,-0.375" d:LayoutOverrides="VerticalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0,10,0,0" Grid.Row="3"/>
-            <TextBlock x:ConnectionId='6' x:Name="NightHigh1" Margin="175,95,25,5" TextWrapping="Wrap" Text="" FontSize="64" TextAlignment="Center" FontFamily="Microsoft NeoGothic" Foreground="#FF464444" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Grid.Row="2"/>
-            <TextBlock x:ConnectionId='7' x:Name="TextLoc" Margin="50,0,50,5" TextWrapping="Wrap" Text="" TextAlignment="Center" FontSize="26.667" d:LayoutOverrides="VerticalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock x:ConnectionId='8' x:Name="CurrDay" Margin="80,5" TextWrapping="Wrap" Text="" FontSize="29.333" TextAlignment="Center" Foreground="Black" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition" Grid.Row="1"/>
+            <Image x:ConnectionId='5' x:Name="DayImg1" Margin="60,55,220,54" RenderTransformOrigin="1.867,-0.533" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Grid.Row="2"/>
+            <TextBlock x:ConnectionId='6' x:Name="DayHigh1" Margin="175,5,25,95" TextWrapping="Wrap" Text="" FontSize="64" TextAlignment="Center" FontFamily="Microsoft NeoGothic" d:LayoutOverrides="HorizontalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition" Grid.Row="2"/>
+            <TextBlock x:ConnectionId='7' x:Name="TextWeather1" TextWrapping="Wrap" Text="" FontSize="24" TextAlignment="Center" RenderTransformOrigin="0.417,-0.375" d:LayoutOverrides="VerticalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0,10,0,0" Grid.Row="3"/>
+            <TextBlock x:ConnectionId='8' x:Name="NightHigh1" Margin="175,95,25,5" TextWrapping="Wrap" Text="" FontSize="64" TextAlignment="Center" FontFamily="Microsoft NeoGothic" Foreground="#FF464444" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Grid.Row="2"/>
+            <TextBlock x:ConnectionId='9' x:Name="TextLoc" Margin="50,0,50,5" TextWrapping="Wrap" Text="" TextAlignment="Center" FontSize="26.667" d:LayoutOverrides="VerticalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock x:ConnectionId='10' x:Name="CurrDay" Margin="80,5" TextWrapping="Wrap" Text="" FontSize="29.333" TextAlignment="Center" Foreground="Black" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment, LeftPosition, RightPosition, TopPosition, BottomPosition" Grid.Row="1"/>
 
 
 
         </Grid>
+        <StackPanel Height="30" VerticalAlignment="Top" Background="#FF0C5197" Opacity="0.75">
+            <AutoSuggestBox x:ConnectionId='4' Name="LocationBox" Width="300" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0"                                                                                                                          QueryIcon="Find"/>
+        </StackPanel>
+        <TextBlock x:ConnectionId='3' x:Name="Debug" HorizontalAlignment="Left" Height="100" Margin="95,0,0,180" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Bottom" Width="160"/>
 
 
 

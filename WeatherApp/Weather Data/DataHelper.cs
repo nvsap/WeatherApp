@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using System.Collections;
+using System.Net.Http;
+using Windows.Data.Json;
 
 namespace WeatherApp
 {
@@ -89,6 +92,33 @@ namespace WeatherApp
             }
 
             return result;
+        }
+
+        public static async /*Task<Dictionary<string, string>string>*/void GetAutocompletedCities(string input, Dictionary<string, string> map)
+        {
+            JsonObject json;
+            //Dictionary<string, string> map = new Dictionary<string, string>();
+            string querry = "http://autocomplete.wunderground.com/aq?query=" + input;
+            var client = new HttpClient();
+            HttpResponseMessage msg = await client.GetAsync(querry);
+            string jsonString = await msg.Content.ReadAsStringAsync();
+            json = JsonValue.Parse(jsonString).GetObject();
+
+            JsonArray cities = json.GetNamedArray("RESULTS");
+
+            JsonValueType type = cities.GetObjectAt(0).ValueType;
+
+            foreach(JsonValue value in cities)
+            {
+                JsonObject jo = JsonValue.Parse(value.ToString()).GetObject();
+                if ("city".Equals(jo.GetNamedString("type")))
+                {
+                    string name = jo.GetNamedString("name");
+                    string loc = jo.GetNamedString("l");
+                    map.Add(name, loc);
+                }
+            }
+            
         }
     }
 }

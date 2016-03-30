@@ -34,18 +34,16 @@ namespace WeatherApp
         public MainPage()
         {
             lang = Lang.EN;
-            
+
             this.InitializeComponent();
             getWeather();
             ApplicationView.PreferredLaunchViewSize = new Size(1280, 720);
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
         }
         
-
-
         private async void getWeather()
         {
-            string url = "http://api.wunderground.com/api/a6743ab79712c4f3/geolookup/forecast10day/lang:"+ lang.ToString() +"/q/" + locCountry.ToString() + locCity.ToString() + ".xml";
+            string url = "http://api.wunderground.com/api/a6743ab79712c4f3/geolookup/forecast10day/lang:"+ lang.ToString() +"/q/" + locCountry.ToString() + "/" + locCity.ToString() + ".xml";
             var client = new HttpClient();
             HttpResponseMessage msg = await client.GetAsync(new Uri(url));
             var xml = await msg.Content.ReadAsStringAsync();    
@@ -141,10 +139,6 @@ namespace WeatherApp
             {
                 getWeather();
             }
-            else
-            {
-                locCountry = locCountry + "/";
-            }
             getWeather();
             //CountryS.Tex();
         }
@@ -152,6 +146,10 @@ namespace WeatherApp
         private void MenuButton1_Click(object sender, RoutedEventArgs e)
         {
             
+        }
+        private void Refresh_Button(object sender, RoutedEventArgs e)
+        {
+            getWeather();
         }
 
         private void button_Click_1(object sender, RoutedEventArgs e)
@@ -162,6 +160,25 @@ namespace WeatherApp
         private void TextLoc_SelectionChanged(object sender, RoutedEventArgs e)
         {
             
+        }
+
+        private void OnLocatioQuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
+        {
+
+        }
+        
+        private async void OnLocationTextCange(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+        {
+            string city = (sender as AutoSuggestBox).Text;
+            Dictionary<string, string> map = new Dictionary<string, string>();
+            DataHelper.GetAutocompletedCities(city, map);
+            this.LocationBox.ItemsSource = map.Values;
+            this.Debug.Text = city;
+        }
+
+        private void OnLocationSuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
+        {
+
         }
     }
 

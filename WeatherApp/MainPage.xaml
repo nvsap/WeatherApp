@@ -12,8 +12,8 @@
             <RowDefinition/>
         </SwapChainPanel.RowDefinitions>
         <Image x:Name="Assets_weather_background_png" Margin="0,0,0,0" Source="Assets/background-allweather.png" Stretch="Fill"/>
-        <StackPanel HorizontalAlignment="Left" Width="50" Background="#FF0C5197" d:LayoutOverrides="TopPosition, BottomPosition" Opacity="0.5" Canvas.ZIndex="2">
-            <Button x:Name="LocatioMenuButton" FontFamily="Segoe MDL2 Assets" Content="&#xE81D;" Height="50" Background="Transparent" Click="MenuButton1_Click" Width="50" Margin="0" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+        <StackPanel HorizontalAlignment="Left" Width="50" Background="#FF0C5197" Opacity="0.5" Canvas.ZIndex="2" Margin="0,30,0,0" d:LayoutOverrides="TopPosition, BottomPosition">
+            <Button x:Name="LocatioMenuButton" FontFamily="Segoe MDL2 Assets" Content="&#xE81D;" Height="50" Background="Transparent" Click="Refresh_Button" Width="50" Margin="0" VerticalAlignment="Bottom" HorizontalAlignment="Left">
                 <Button.Resources>
                     <Flyout x:Key="LocationChose">
                         <Grid Height="146" Width="200">
@@ -47,9 +47,10 @@
                     </MenuFlyout>
                 </Button.Flyout>
             </Button>
+            <Button x:Name="Button" FontFamily="Segoe MDL2 Assets" Content="&#59180;" Width="50" Height="50" Background="#FF2668A1" VerticalAlignment="Bottom" Click="Refresh_Button"/>
             <!--<Button x:Name="button" Content="Button" HorizontalAlignment="Stretch" Height="100" VerticalAlignment="Stretch" Margin="0" Click="button_Click_1"/>-->
         </StackPanel>
-        <Grid HorizontalAlignment="Right" Margin="0,20,25,20" Width="335">
+        <Grid HorizontalAlignment="Right" Margin="0,35,25,20" Width="335" d:LayoutOverrides="TopPosition, BottomPosition">
             <Grid.RowDefinitions>
                 <RowDefinition Height="5*"/>
                 <RowDefinition Height="6*"/>
@@ -106,6 +107,10 @@
 
 
         </Grid>
+        <StackPanel Height="30" VerticalAlignment="Top" Background="#FF0C5197" Opacity="0.75">
+            <AutoSuggestBox Name="LocationBox" Width="300" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0" TextChanged="OnLocationTextCange" QuerySubmitted="OnLocatioQuerySubmitted" SuggestionChosen="OnLocationSuggestionChosen" QueryIcon="Find"/>
+        </StackPanel>
+        <TextBlock x:Name="Debug" HorizontalAlignment="Left" Height="100" Margin="95,0,0,180" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Bottom" Width="160"/>
 
 
 
